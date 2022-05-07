@@ -1,6 +1,0 @@
-use system::console;
-
-func main() -> ()
-{
-	write "hello world!";
-}
