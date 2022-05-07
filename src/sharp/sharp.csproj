@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="compiler\**" />
+    <EmbeddedResource Remove="compiler\**" />
+    <None Remove="compiler\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Error\Lexer\" />
+    <Folder Include="Error\Generator\" />
+    <Folder Include="Error\Parser\" />
+    <Folder Include="Generator\Data\" />
+  </ItemGroup>
+
+</Project>

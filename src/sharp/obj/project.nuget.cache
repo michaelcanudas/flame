@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/mRVs/KMF79Cdev0k8FrGfcnSz8RRLBC0MUZtD9f5r2KXj9Xr4uIOsxtAi1DPn99XZ5kEOGdmB5N70BdGYWixw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Michael\\source\\repos\\flame\\src\\sharp\\sharp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Michael\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
