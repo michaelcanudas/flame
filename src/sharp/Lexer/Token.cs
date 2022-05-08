@@ -24,6 +24,8 @@ namespace sharp
             {
                 "func" => (TokenKind.Func, TokenCategory.Keyword),
                 ";" => (TokenKind.Semicolon, TokenCategory.Symbol),
+                ":" => (TokenKind.Colon, TokenCategory.Symbol),
+                "::" => (TokenKind.ColonColon, TokenCategory.Symbol),
                 "(" => (TokenKind.LeftParenthesis, TokenCategory.Symbol),
                 ")" => (TokenKind.RightParenthesis, TokenCategory.Symbol),
                 "{" => (TokenKind.RightBracket, TokenCategory.Symbol),
@@ -40,6 +42,8 @@ namespace sharp
             None,
             Func,
             Semicolon,
+            Colon,
+            ColonColon,
             LeftParenthesis,
             RightParenthesis,
             LeftBracket,
