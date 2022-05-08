@@ -6,7 +6,8 @@ namespace sharp
     {
         public static void Handle(string[] args)
         {
-            if (args.Length < 2) InvalidArgCount.Throw();
+            if (args.Length < 2)
+                InvalidArgCount.Throw();
 
             var input = args[1];
             var lexer = new Lexer();
@@ -20,8 +21,10 @@ namespace sharp
             Console.WriteLine("[");
             for (int i = 0; i < output.Length; i++)
             {
-                if (i != output.Length - 1) Console.WriteLine(output[i].Value + ",");
-                else Console.WriteLine(output[i].Value);
+                if (i != output.Length - 1)
+                    Console.WriteLine(output[i].Value + ",");
+                else
+                    Console.WriteLine(output[i].Value);
             }
             Console.WriteLine("]");
         }

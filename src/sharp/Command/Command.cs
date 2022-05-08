@@ -4,9 +4,8 @@
     {
         public static void Handle(string[] args)
         {
-            if (args.Length == 0) 
+            if (args.Length == 0)
                 InvalidArgCount.Throw();
-            
             switch (args[0])
             {
                 case "build":
