@@ -4,8 +4,6 @@
     {
         public static byte[] Build()
         {
-            // check that opcodes mod 512 is 0
-
             Header header = new Header();
             header.mzHeader = new MZHeader();
             header.dosStub = new DOSStub();
@@ -15,7 +13,7 @@
             header.codeSection = new CodeSection();
             header.importTable = new ImportTable();
 
-            return new byte[] { };
+            return header.ToByteArray();
         }
 
         struct Header
@@ -67,8 +65,7 @@
 
         struct DOSStub
         {
-            // 64
-            public byte[] message;
+            public unsafe fixed byte message[64];
         }
 
         struct COFFHeader
@@ -134,8 +131,7 @@
 
         struct DataDirectories
         {
-            // 32
-            public uint[] directories;
+            public unsafe fixed uint directories[32];
         }
 
         struct CodeSection
@@ -157,8 +153,7 @@
 
         struct ImportTable
         {
-            // 12
-            public ulong[] importTableBytes;
+            public unsafe fixed ulong importTableBytes[12];
         }
     }
 }

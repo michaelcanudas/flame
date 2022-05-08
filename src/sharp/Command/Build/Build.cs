@@ -4,7 +4,8 @@
     {
         public static void Handle(string[] args)
         {
-            if (args.Length < 3) InvalidArgCount.Throw();
+            if (args.Length < 3)
+                InvalidArgCount.Throw();
 
             var input = args[1];
             var lexer = new Lexer();
@@ -17,7 +18,8 @@
 
         private static void OutputFile(string[] args, File output)
         {
-            if (args.Length < 3) InvalidArgCount.Throw();
+            if (args.Length < 3)
+                InvalidArgCount.Throw();
 
             var hSize = output.Header.Length;
             var iSize = output.Instructions.Length;
