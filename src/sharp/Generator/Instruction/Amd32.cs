@@ -5,6 +5,8 @@
 /// eventually will be interface
 ///
 
+// remove this line
+
 namespace sharp
 {
     public class Amd32
